@@ -20,7 +20,14 @@ let womenDropdownOpen = document.querySelector('.women-drop-open');
 let womenCat = document.querySelector('.women-cat');
 let menDropdownOpen = document.querySelector('.men-drop-open');
 let menCat = document.querySelector('.men-cat');
-
+let navVerticalBtn = document.querySelector('.navbar_vertical_btn_home');
+let navVerticalHome = document.querySelector('.navbar_vertical_home');
+let navVerticalShopBtn = document.querySelector('.navbar_vertical_btn_shop');
+let navVerticalShop = document.querySelector('.navbar_vertical_shop');
+let navVerticalCategoriesBtn = document.querySelector('.navbar_vertical_btn_categories');
+let navVerticalCategories = document.querySelector('.navbar_vertical_categories');
+let hamburger = document.querySelector('.hamburger');
+let verticalDropNavbar = document.querySelector('.vertical_drop_navbar');
 
 HomeDropdownOpen.addEventListener('mouseover',()=>{
     home.style.display='grid';
@@ -145,6 +152,18 @@ menCat.addEventListener('mouseover',()=>{
     homeLivingDropdownOpen.style.display='none';
     womenDropdownOpen.style.display='none';
     menDropdownOpen.style.display='grid';
+});
+navVerticalBtn.addEventListener('click',()=>{
+    navVerticalHome.classList.toggle('toggler');
+});
+navVerticalShopBtn.addEventListener('click',()=>{
+    navVerticalShop.classList.toggle('toggler');
+});
+navVerticalCategoriesBtn.addEventListener('click',()=>{
+    navVerticalCategories.classList.toggle('toggler');
+});
+hamburger.addEventListener('click',()=>{
+    verticalDropNavbar.classList.toggle('toggler');
 });
 
 $('.owl-carousel').owlCarousel({
