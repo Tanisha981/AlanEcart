@@ -355,6 +355,7 @@ ol.flickity-page-dots {
     padding-left: 0;
     display: flex;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .dealing-hour li{
     background-color: #fff;
@@ -362,6 +363,7 @@ ol.flickity-page-dots {
     border-radius: 14px;
     text-align: center;
     margin-right: 12px;
+    margin-bottom: 16px;
     padding: 6px 18px;
     box-shadow: -3px 3px #d4cdcd;
 }
@@ -377,6 +379,32 @@ ol.flickity-page-dots {
     color: #fff;
     margin-top: 30px;
 }
+.navbar_vertical{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #eaeaea;
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding: 8px 4px;
+}
+.navbar_vertical:focus{
+    outline: none;
+}
+.navbar_vertical_home{
+    background: aliceblue;
+}
+.vertical_drop_navbar{
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 100%;
+}
+.toggler{
+    display: block!important;
+}
+
 @media only screen and (max-width: 577px) {
     .blog_section .owl-nav .owl-prev {
         left: -17px !important;
@@ -385,11 +413,33 @@ ol.flickity-page-dots {
         right: -17px !important;
     }
 }
+
 @media(max-width: 1023px){
     .search-bar{
         display: none;
     }
     .hamburger{
         display: inline-block!important;
+    }
+}
+
+@media(max-width: 767px){
+    .gallery-cell {
+        width: 100%;
+    }
+    .img-intro{
+        left: 12%;
+    }
+    .flickity-viewport {
+        height: 350px!important;
+    }
+    .blog_section {
+        padding-bottom: 0;
+    }
+    .top-collections{
+        margin-bottom: 50px!important;
+    }
+    .shop-btn{
+        margin-top: 10px;
     }
 }
