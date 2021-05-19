@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -70,17 +70,17 @@
                     </a>
                 </div>
                 <div class="col-lg-5 search-bar input-group">
-                    <div class="input-group-prepend">
-                    <button type="button" class="btn drop-menu dropdown-toggle" data-toggle="dropdown">
-                        All
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Men</a>
-                        <a class="dropdown-item" href="#">Women</a>
-                        <a class="dropdown-item" href="#">Kids</a>
-                        <a class="dropdown-item" href="#">Home & Living</a>
-                    </div>
+                    <div class="input-group-prepend dropdown">
+                        <button type="button" class="btn drop-menu dropdown-toggle" data-toggle="dropdown">
+                            All
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Men</a>
+                            <a class="dropdown-item" href="#">Women</a>
+                            <a class="dropdown-item" href="#">Kids</a>
+                            <a class="dropdown-item" href="#">Home & Living</a>
+                        </div>
                     </div>
                     <input type="search" class="drop-menu form-control" placeholder="Search...">
                     <div class="input-group-append">
@@ -528,6 +528,43 @@
         </div>
     </div>
 
+    <div class="vertical_drop_navbar d-none">
+        <button class="navbar_vertical navbar_vertical_btn_home">Home</button>
+        <div class="d-none navbar_vertical_home">
+            <a class="dropdown-item mb-2 font-weight-bold" href="#">Footwear</a>
+            <a class="dropdown-item mb-2" href="#">Showpieces & Vases</a>
+            <a class="dropdown-item mb-2" href="#">Wall Decor</a>
+            <a class="dropdown-item mb-2" href="#">Mirrors</a>
+            <a class="dropdown-item mb-2" href="#">Wall Decor</a>
+            <a class="dropdown-item mb-2" href="#">Plants & Planters</a>
+        </div>
+        <button class="navbar_vertical navbar_vertical_btn_shop">Shop</button>
+        <div class="d-none navbar_vertical_home navbar_vertical_shop">
+            <a class="dropdown-item mb-2 font-weight-bold" href="#">Footwear</a>
+            <a class="dropdown-item mb-2" href="#">Showpieces & Vases</a>
+            <a class="dropdown-item mb-2" href="#">Wall Decor</a>
+            <p class="dropdown-item mb-2">4+ price table snippets</p>
+            <a class="dropdown-item font-weight-bold" href="#">Categories</a>
+            <p class="dropdown-item mb-2">16+ categories snippets</p>
+            <a class="dropdown-item font-weight-bold" href="#">Promotion</a>
+            <a class="dropdown-item mb-2" href="#">Mirrors</a>
+            <a class="dropdown-item mb-2" href="#">Wall Decor</a>
+            <a class="dropdown-item mb-2" href="#">Plants & Planters</a>
+        </div>
+        <button class="navbar_vertical navbar_vertical_btn_categories">Categories</button>
+        <div class="d-none navbar_vertical_home navbar_vertical_categories">
+            <a class="dropdown-item mb-2 font-weight-bold" href="#">Footwear</a>
+            <a class="dropdown-item mb-2" href="#">Showpieces & Vases</a>
+            <a class="dropdown-item mb-2" href="#">Wall Decor</a>
+        </div> 
+        <button class="navbar_vertical">Products</button>
+        <button class="navbar_vertical">Snippets</button>
+        <button class="navbar_vertical">More</button>
+        <button class="navbar_vertical">Blog</button> 
+        <button class="navbar_vertical">Contact Us</button>
+        <button class="navbar_vertical">FAQ</button>
+    </div>
+
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
         <div class="gallery-cell">
             <a href="">
@@ -591,7 +628,7 @@
                         </div>
                         <div class="blog_details">
                             <div class="blog_title">
-                                <h5><a href="#">Chair Stackable (Wooden Seat)</a></h5>
+                                <h5><a href="#">Chair Stackable</a></h5>
                             </div>
                             <p>$ 26.10</p>
                             <button class="cart-btn">
@@ -776,7 +813,7 @@
     <div class="top-collections">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-sm-4 pb-2">
                     <div class="offer-hover">
                         <a href="">
                             <img class="w-100" src="images/carousel3.jpg">
@@ -786,7 +823,7 @@
                         </div>
                     </div>                   
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-4 pb-2">
                     <div class="offer-hover">
                         <a href="">
                             <img class="w-100" src="images/carousel4.jpg">
@@ -796,7 +833,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-4">
                     <div class="offer-hover">
                         <a href="">
                             <img class="w-100" src="images/carousel2.jpg">
@@ -1018,7 +1055,7 @@
     <div class="top-collections py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-5">
                     <h1 class="display-4 mb-4">Deal Of <span class="font-weight-bold">The Day</span></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <ul class="dealing-hour">
@@ -1039,8 +1076,8 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!-- bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
     <!-- carousel -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
